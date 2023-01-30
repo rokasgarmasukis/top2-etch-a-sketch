@@ -13,6 +13,15 @@ body {
     align-items: center;
 }
 
+.drawing-area {
+    display: flex;
+}
+
+.tools {
+    display: flex;
+    flex-direction: column;
+}
+
 .canvas {
     box-sizing: content-box;
     display: flex;
@@ -20,7 +29,16 @@ body {
     width: 320px;
     height: 320px;
     border: 1px solid black;
+    box-shadow: 0 0 10px 12px rgba(0, 0, 0, 0.1);
+    /* cursor: pointer; */
 }
+
+.disableCaret{
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+     user-select: none;       
+  }
 
 .pixel {
     width: 20px;

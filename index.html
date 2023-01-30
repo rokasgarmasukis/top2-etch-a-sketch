@@ -1,16 +1,26 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="app.js" defer></script>
-</head>
-<body>
-    <div class="canvas">
+  </head>
+  <body>
+    <div class="drawing-area">
+      <div class="tools">
+        <input
+          type="color"
+          id="html5colorpicker"
 
+          value="#000000"
+          style="width: 50px"
+        />
+        <button class="fill-button">Fill</button>
+        <button class="clear-button">Clear</button>
+      </div>
+      <div class="canvas disableCaret"></div>
     </div>
-    <button class="clear-button">Clear</button>
-</body>
+  </body>
 </html>
